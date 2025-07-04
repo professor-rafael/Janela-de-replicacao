@@ -1,9 +1,3 @@
-// by Metamere
-// 12-5-2022
-// started the sketch using chat GPT codex. 
-// It was actually able to set up the inital image quadrant properly,
-// Then I took it from there.
-
 var w,D
 var mX=0
 var mY=0
@@ -12,15 +6,11 @@ var rY=0
 var t=0
 function setup() {
 	H=min(windowWidth,windowHeight)
-	//W=max(windowWidth,windowHeight) // allow to fill screen
-	W=H // square aspect ratio
+	W=H 
 	img = createCanvas(W, H);
 	w = W/2
 	h = H/2
 	pixelDensity(displayDensity())
-	
-  // img = createCanvas(W=800,W);
-	// w = W/2
 	D = pow(H*H/TAU,0.5)
 	colorMode(HSB,100,100,100,100)
 }
